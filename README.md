@@ -180,6 +180,32 @@ Data (truth) → State (observable) → UI (reacts automatically)
 ```
 > No manual refresh. Changes flow forward automatically.
 
+
+---
+
+## E-commerce App Progress Parts 
+
+### Part 1 (prerequisites & data) : 
+* Add dependencies in gradle.
+* Add images in Drawable Package.
+* Set up data Package (Product, ProductCategory & CartProduct as **data classes**, and ProductData as **Object**).
+
+### Part 2 (bottom bar, navigation & profile screen) : 
+* Create 4 main screens in uiscreens Package (Home, Search, Cart & Profile). 
+* Create navigation Package (BottomNavItem as **sealed class** & AppNavGraph as **composable fun**).
+* Profile Screen Design.
+
+
+### Part 3 (viewmodel & cart screen) : 
+
+
+### Part 4 (product listing & search screen) : 
+
+
+### Part 5 (home screen & final output) : 
+
+
+
 --- 
 
 ## Future Improvements
