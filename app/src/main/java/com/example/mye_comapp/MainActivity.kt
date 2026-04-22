@@ -11,8 +11,11 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.mye_comapp.navigation.AppNavGraph
 import com.example.mye_comapp.ui.theme.MyEcomAPPTheme
 import com.example.mye_comapp.uiscreens.ProfileScreen
+import com.example.mye_comapp.viewmodel.CartViewModel
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +23,9 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             MyEcomAPPTheme {
-                ProfileScreen()
+                val cartViewModel : CartViewModel = viewModel()
+                AppNavGraph(cartViewModel)
+
             }
         }
     }

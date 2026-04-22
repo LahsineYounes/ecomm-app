@@ -23,12 +23,17 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.mye_comapp.uiscreens.CartScreen
 import com.example.mye_comapp.uiscreens.HomeScreen
+import com.example.mye_comapp.uiscreens.OrderSuccessScreen
+import com.example.mye_comapp.uiscreens.PaymentScreen
 import com.example.mye_comapp.uiscreens.ProfileScreen
 import com.example.mye_comapp.uiscreens.SearchScreen
+import com.example.mye_comapp.viewmodel.CartViewModel
 
 // Define all the navigation between the screens
 @Composable
-fun AppNavGraph() {
+fun AppNavGraph(
+    cartViewModel: CartViewModel
+) {
     val navController = rememberNavController()
 
     Scaffold(
@@ -39,10 +44,19 @@ fun AppNavGraph() {
             NavHost (
                 navController, startDestination = BottomNavItem.Home.route
             ){
-                composable(BottomNavItem.Home.route) { HomeScreen() }
-                composable(BottomNavItem.Search.route) { SearchScreen() }
-                composable(BottomNavItem.Cart.route) { CartScreen() }
-                composable(BottomNavItem.Profile.route) { ProfileScreen() }
+                composable("home") { HomeScreen() }
+                composable("search") { SearchScreen() }
+                composable("cart") {
+                    CartScreen(cartViewModel, navController)
+                }
+                composable("profile") { ProfileScreen() }
+
+                composable("Payment") {
+                    PaymentScreen(navController)
+                }
+                composable("OrderSuccess") {
+                    OrderSuccessScreen(navController, cartViewModel)
+                }
             }
         }
 
