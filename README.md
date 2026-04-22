@@ -197,6 +197,11 @@ Data (truth) → State (observable) → UI (reacts automatically)
 
 
 ### Part 3 (viewmodel & cart screen) : 
+* viewmodel -> CartViewModel
+* cart screen 
+* payment screen
+* order success screen
+-> Focused to How we add product to the cart, increase or decrease quantities and calculate the total amount.
 
 
 ### Part 4 (product listing & search screen) : 
