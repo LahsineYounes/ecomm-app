@@ -201,7 +201,8 @@ Data (truth) → State (observable) → UI (reacts automatically)
 * cart screen 
 * payment screen
 * order success screen
--> Focused to How we add product to the cart, increase or decrease quantities and calculate the total amount.
+
+→ Focused to How we add product to the cart, increase or decrease quantities and calculate the total amount.
 
 
 ### Part 4 (product listing & search screen) : 
