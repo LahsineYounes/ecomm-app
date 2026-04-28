@@ -98,7 +98,7 @@ fun CartScreen(
                             verticalAlignment = Alignment.CenterVertically
                         ) {
                             Image(
-                                painter = painterResource(cartItem.cartProduct.productID),
+                                painter = painterResource(cartItem.cartProduct.productImage),
                                 contentDescription = null,
                                 modifier = Modifier.size(80.dp).clip(RoundedCornerShape(12.dp)),
                                 contentScale = ContentScale.Crop
@@ -113,7 +113,7 @@ fun CartScreen(
                                 )
                                 Spacer(modifier = Modifier.height(4.dp))
                                 Text(
-                                    text = "MAD${cartItem.cartProduct.productPrice}",
+                                    text = "MAD ${cartItem.cartProduct.productPrice}",
                                     color = Blue,
                                     fontWeight = FontWeight.SemiBold
                                 )

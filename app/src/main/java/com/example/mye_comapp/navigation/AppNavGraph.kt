@@ -25,6 +25,7 @@ import com.example.mye_comapp.uiscreens.CartScreen
 import com.example.mye_comapp.uiscreens.HomeScreen
 import com.example.mye_comapp.uiscreens.OrderSuccessScreen
 import com.example.mye_comapp.uiscreens.PaymentScreen
+import com.example.mye_comapp.uiscreens.ProductListScreen
 import com.example.mye_comapp.uiscreens.ProfileScreen
 import com.example.mye_comapp.uiscreens.SearchScreen
 import com.example.mye_comapp.viewmodel.CartViewModel
@@ -45,7 +46,9 @@ fun AppNavGraph(
                 navController, startDestination = BottomNavItem.Home.route
             ){
                 composable("home") { HomeScreen() }
-                composable("search") { SearchScreen() }
+                composable("search") {
+                    SearchScreen(cartViewModel)
+                }
                 composable("cart") {
                     CartScreen(cartViewModel, navController)
                 }
@@ -56,6 +59,10 @@ fun AppNavGraph(
                 }
                 composable("OrderSuccess") {
                     OrderSuccessScreen(navController, cartViewModel)
+                }
+
+                composable("products/{category}") {
+                    ProductListScreen(it.arguments?.getString("category")!!, cartViewModel)
                 }
             }
         }

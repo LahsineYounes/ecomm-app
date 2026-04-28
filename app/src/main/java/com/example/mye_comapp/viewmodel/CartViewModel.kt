@@ -34,7 +34,6 @@ class CartViewModel: ViewModel() {
 
     fun clearCart() {
         cartProducts.clear()
-
     }
 
 
