@@ -206,10 +206,11 @@ Data (truth) → State (observable) → UI (reacts automatically)
 
 
 ### Part 4 (product listing & search screen) : 
-
+* Design how our product item will look, how we should list it
+* Search for any product in the search screen
 
 ### Part 5 (home screen & final output) : 
-
+* Design home screen and giive some final touches
 
 
 --- 
