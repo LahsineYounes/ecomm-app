@@ -33,13 +33,15 @@ Built as a learning project, it focuses on clean code and the core logic behind 
 ---
 
 ## Screenshots
+ 
+| Home | Search | Cart |
+|------|--------|------|
+| <img width="200" alt="home screen" src="https://github.com/user-attachments/assets/db0f2f03-de96-4813-aef8-82f5f2b2acff" /> | <img width="200" alt="search screen" src="https://github.com/user-attachments/assets/17d710c3-2198-409d-a1fc-941d14b427f1" /> | <img width="200" alt="cart" src="https://github.com/user-attachments/assets/f79e1c2e-0da7-4452-ba68-4e079d8fc358" /> |
 
-Home
-Search
-Cart
-Profile
-Checkout
-Success
+| Profile | Checkout | Success |
+|---------|----------|---------|
+| <img width="200" alt="profile screen" src="https://github.com/user-attachments/assets/151ba74c-8f66-40a0-9b8d-1ca34486e7d3" /> | <img width="200" alt="cart screen" src="https://github.com/user-attachments/assets/45868dde-180e-4f28-9d31-091631cd6644" /> | <img width="200" alt="success screen" src="https://github.com/user-attachments/assets/0345901c-4aa6-4063-b79b-0038f465acbf" /> |
+
 
 ---
 
