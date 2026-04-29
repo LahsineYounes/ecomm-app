@@ -3,7 +3,7 @@ package com.example.mye_comapp.data
 data class Product(
     val productID: Int,
     val productName: String,
-    val productPrice: Double,
+    val productPrice: Int,
     val productImage: Int,
     val productCategory: ProductCategory
 )

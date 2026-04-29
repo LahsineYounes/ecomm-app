@@ -45,7 +45,11 @@ fun AppNavGraph(
             NavHost (
                 navController, startDestination = BottomNavItem.Home.route
             ){
-                composable("home") { HomeScreen() }
+                composable("home") {
+                    HomeScreen(
+                        navController, cartViewModel
+                    )
+                }
                 composable("search") {
                     SearchScreen(cartViewModel)
                 }

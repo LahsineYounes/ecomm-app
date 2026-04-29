@@ -60,7 +60,7 @@ fun ProfileScreen() {
             Spacer(modifier = Modifier.height(8.dp))
 
             Text(
-                text = "John Doe",
+                text = "Younes Lahsine",
                 fontSize = 24.sp,
                 fontWeight = FontWeight.Bold
             )

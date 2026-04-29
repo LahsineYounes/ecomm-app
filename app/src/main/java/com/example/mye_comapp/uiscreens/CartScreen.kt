@@ -167,6 +167,12 @@ fun CartScreen(
                     fontWeight = FontWeight.Bold,
                     color = Blue
                 )
+                Text(
+                    text = "MAD $totalPrice",
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Blue
+                )
             }
             Spacer(modifier = Modifier.height(8.dp))
             Button(
